@@ -114,7 +114,7 @@ button{
     .bottombar{
         display: none;
     }
-    .center:hover+.bottombar{
+    .container:hover>.bottombar{
         display: flex;
     }
     
