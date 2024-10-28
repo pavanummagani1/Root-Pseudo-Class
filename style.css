@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryColor : #EDE428;
+    --SecondaryColor: #FFFFFE;
+    --AccentColor: #446D5F;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: var(--primaryColor);
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    color: var(--SecondaryColor);
+    position: relative;
+}
+.items{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+    gap: 10px;
+    font-size: 20px;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 24px;
+    font-weight: 700;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+button{
+    padding: 14px;
+    background-color: var(--AccentColor);
+    color: var(--SecondaryColor);
+    font-size: 16px;
+    border-radius: 20px;
+    border-color: var(--AccentColor);
+}
+.bottombar{
+    background-color: var(--SecondaryColor);
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.bar{
+    height: 20px;
+    border: 2px solid #000;
+    width: 400px;
+    display: flex;
+}
+.copyIcon{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    height: 40px;
+}
+.box1{
+    width: 50%;
+    height: 100%;
+    border: 2px solid;
+    background-color: var(--primaryColor);
+}
+.box2{
+    width: 30%;
+    height: 100%;
+    background-color: var(--SecondaryColor);
+}
+.box3{
+    width: 20%;
+    height: 100%;
+    background-color: var(--AccentColor);
+}
+.bottombar{
+    display: none;
+}
+.center:hover+.bottombar{
+    display: flex;
+}
