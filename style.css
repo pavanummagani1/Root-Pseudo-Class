@@ -98,3 +98,25 @@ button{
 .center:hover+.bottombar{
     display: flex;
 }
+
+@media screen and (width<500px) {
+    .container{
+        width: 300px;
+        height: 600px;
+    }
+    .center{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .bottombar{
+        display: none;
+    }
+    .center:hover+.bottombar{
+        display: flex;
+    }
+    
+    
+}
